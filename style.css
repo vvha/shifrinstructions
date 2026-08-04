@@ -469,7 +469,7 @@ main {
 
 .device-nav {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     padding: 12px;
     border-bottom: 4px solid var(--navy);
@@ -672,7 +672,7 @@ main {
     background: var(--cyan);
     font-size: 12px;
     font-weight: 900;
-    box-shadow: 0 3px 0 var(--orange);
+    box-shadow: 0 3px 0 var(--navy);
 }
 
 .steps li:nth-child(2) .step-number,
@@ -889,7 +889,7 @@ footer > a:last-child {
     }
 
     .device-nav {
-        grid-template-columns: repeat(5, minmax(145px, 1fr));
+        grid-template-columns: repeat(4, minmax(145px, 1fr));
         overflow-x: auto;
     }
 
@@ -1036,7 +1036,7 @@ footer > a:last-child {
     }
 
     .device-nav {
-        grid-template-columns: repeat(5, max-content);
+        grid-template-columns: repeat(4, max-content);
         justify-content: start;
         overflow-x: auto;
         padding: 9px;
@@ -1182,4 +1182,41 @@ footer > a:last-child {
 .store-link:focus-visible {
     outline: 3px solid #ff526d;
     outline-offset: 3px;
+}
+
+.step-shot {
+    margin-top: 15px;
+}
+
+.step-shot summary {
+    width: fit-content;
+    padding: 8px 12px;
+    border: 2px solid #082e4d;
+    border-radius: 10px;
+    background: #ffd91a;
+    color: #082e4d;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #082e4d;
+}
+
+.step-shot[open] summary {
+    margin-bottom: 14px;
+}
+
+.step-shot img {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    border: 3px solid var(--cyan);
+    border-radius: 18px;
+}
+
+.step-shot span {
+    display: block;
+    margin-top: 9px;
+    color: #526576;
+    font-size: 11px;
+    font-weight: 700;
 }

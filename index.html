@@ -42,15 +42,13 @@
 
         <div class="device-switcher">
             <input class="device-radio" type="radio" name="device" id="ios" checked>
-            <input class="device-radio" type="radio" name="device" id="mac">
             <input class="device-radio" type="radio" name="device" id="android">
             <input class="device-radio" type="radio" name="device" id="tv">
             <input class="device-radio" type="radio" name="device" id="windows">
 
             <div class="guide-shell">
                 <nav class="device-nav" aria-label="Выбор устройства">
-                    <label for="ios"><span class="device-symbol">IOS</span></label>
-                    <label for="mac"><span class="device-symbol">MacOS</span></label>
+                    <label for="ios"><span class="device-symbol">IOS/MacOS</span></label>
                     <label for="android"><span class="device-symbol">Android</span></label>
                     <label for="tv"><span class="device-symbol">Android TV</span></label>
                     <label for="windows"><span class="device-symbol">Windows</span></label>
@@ -59,62 +57,47 @@
                 <div class="panels">
                     <article class="guide-panel panel-ios">
                         <div class="guide-intro">
-                            <div><span class="guide-eyebrow">iPhone и iPad</span><h3>Подключение на iOS</h3><p>Установите HAPP, скопируйте личную ссылку из бота и включите подключение.</p></div>
+                            <div><span class="guide-eyebrow">iPhone, iPad и Mac</span><h3>Подключение на iOS и macOS</h3><p>Установите HAPP, скопируйте личную ссылку из бота и включите подключение.</p></div>
                             <span class="time-badge">≈ 4 минуты</span>
                         </div>
-                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Подготовьте доступ к App Store и Telegram. Личную ссылку нельзя передавать другим людям.</p></div>
+                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Подготовьте доступ к App Store и Telegram</p></div>
                         <ol class="steps">
                             <li><span class="step-number">01</span><div><h4>Установите HAPP</h4><p>Выберите версию приложения или найдите «Happ» в App Store.</p><div class="store-links"><a class="store-link" href="https://apps.apple.com/us/app/happ-proxy-utility/id6504287215" target="_blank" rel="noopener noreferrer">App Store · Global</a><a class="store-link" href="https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973" target="_blank" rel="noopener noreferrer">App Store · Rus</a></div></div></li>
-                            <li><span class="step-number">02</span><div><h4>Скопируйте ссылку</h4><p>Откройте бота, нажмите «Личный кабинет» и скопируйте строку «Ваша ссылка на подключение VPN».</p><small>Это личная ссылка — не передавайте её другим людям.</small></div></li>
-                            <li><span class="step-number">03</span><div><h4>Добавьте ссылку в HAPP</h4><p>Разрешите создание VPN-соединения, нажмите «+» и выберите «Вставить из буфера обмена».</p></div></li>
+                            <li><span class="step-number">02</span><div><h4>Скопируйте ссылку</h4><p>Откройте бота, нажмите «Личный кабинет» и скопируйте строку «Ваша ссылка на подключение VPN».</p><small>Это личная ссылка — не передавайте её другим людям.</small><details class="step-shot"><summary>Показать на экране</summary><a href="./public/ios-bot.jpg" target="_blank"><img src="./public/ios-bot.jpg" alt="Ссылка на подключение в Telegram-боте" loading="lazy"></a><span>Найдите ссылку в личном кабинете бота</span></details></div></li>
+                            <li><span class="step-number">03</span><div><h4>Добавьте ссылку в HAPP</h4><p>Разрешите создание VPN-соединения, нажмите «+» и выберите «Вставить из буфера обмена».</p><details class="step-shot"><summary>Показать на экране</summary><a href="./public/happ.jpg" target="_blank"><img src="./public/happ.jpg" alt="Импорт ссылки в HAPP" loading="lazy"></a><span>Нажмите «+» → «Вставить из буфера обмена»</span></details></div></li>
                             <li><span class="step-number">04</span><div><h4>Подключитесь</h4><p>Выберите нужную страну и нажмите кнопку включения.</p></div></li>
                         </ol>
                         <div class="success-card"><span class="success-icon">✓</span><div><strong>Готово</strong><p>VPN настроен и готов к работе.</p></div></div>
                     </article>
 
-                    <article class="guide-panel panel-mac">
-                        <div class="guide-intro">
-                            <div><span class="guide-eyebrow">MacBook и iMac</span><h3>Подключение на macOS</h3><p>Скопируйте ключ, импортируйте профиль и разрешите системное подключение.</p></div>
-                            <span class="time-badge">≈ 4 минуты</span>
-                        </div>
-                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Используйте только приложение, указанное в вашем Telegram-боте.</p></div>
-                        <ol class="steps">
-                            <li><span class="step-number">01</span><div><h4>Скопируйте ключ</h4><p>В Telegram-боте откройте активную подписку, нажмите «Получить ключ» и скопируйте его.</p></div></li>
-                            <li><span class="step-number">02</span><div><h4>Установите приложение</h4><p>Скачайте приложение по ссылке из бота. Если macOS спросит подтверждение, разрешите запуск в системных настройках.</p></div></li>
-                            <li><span class="step-number">03</span><div><h4>Импортируйте профиль</h4><p>В приложении выберите Add profile → Import from clipboard и вставьте скопированный ключ.</p></div></li>
-                            <li><span class="step-number">04</span><div><h4>Включите соединение</h4><p>Активируйте профиль и подтвердите добавление VPN-конфигурации паролем или Touch ID.</p></div></li>
-                        </ol>
-                        <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><div><strong>Готово</strong><p>Профиль подключён. Теперь можно свернуть приложение — соединение продолжит работать.</p></div></div>
-                    </article>
-
                     <article class="guide-panel panel-android">
                         <div class="guide-intro">
-                            <div><span class="guide-eyebrow">Телефон или планшет</span><h3>Подключение на Android</h3><p>Установите приложение из Google Play, импортируйте ключ и запустите профиль.</p></div>
-                            <span class="time-badge">≈ 3 минуты</span>
+                            <div><span class="guide-eyebrow">Телефон или планшет</span><h3>Подключение на Android</h3><p>Установите HAPP, скопируйте личную ссылку из бота и включите подключение.</p></div>
+                            <span class="time-badge">≈ 4 минуты</span>
                         </div>
-                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Ссылка на совместимое приложение доступна рядом с вашим ключом в боте.</p></div>
+                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Подготовьте доступ к Google play и Telegram</p></div>
                         <ol class="steps">
-                            <li><span class="step-number">01</span><div><h4>Получите ключ</h4><p>Откройте «Моя подписка» в боте, нажмите «Получить ключ», затем — «Скопировать». Не изменяйте текст ссылки.</p></div></li>
-                            <li><span class="step-number">02</span><div><h4>Скачайте приложение</h4><p>Перейдите в Google Play по ссылке из бота и установите рекомендованное приложение.</p></div></li>
-                            <li><span class="step-number">03</span><div><h4>Импортируйте из буфера</h4><p>Нажмите «+», выберите Import from clipboard / «Из буфера обмена» и подтвердите добавление профиля.</p></div></li>
-                            <li><span class="step-number">04</span><div><h4>Запустите подключение</h4><p>Нажмите кнопку включения и разрешите приложению создать VPN-подключение.</p></div></li>
+                            <li><span class="step-number">01</span><div><h4>Установите HAPP</h4><p>Выберите версию приложения или найдите «Happ» в Google play.</p><div class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.happproxy" target="_blank" rel="noopener noreferrer">Google play</a><a class="store-link" href="https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk" target="_blank" rel="noopener noreferrer">Скачать APK</a></div></div></li>
+                            <li><span class="step-number">02</span><div><h4>Скопируйте ссылку</h4><p>Откройте бота, нажмите «Личный кабинет» и скопируйте строку «Ваша ссылка на подключение VPN».</p><small>Это личная ссылка — не передавайте её другим людям.</small><details class="step-shot"><summary>Показать на экране</summary><a href="./public/ios-bot.jpg" target="_blank"><img src="./public/ios-bot.jpg" alt="Ссылка на подключение в Telegram-боте" loading="lazy"></a><span>Найдите ссылку в личном кабинете бота</span></details></div></li>
+                            <li><span class="step-number">03</span><div><h4>Добавьте ссылку в HAPP</h4><p>Разрешите создание VPN-соединения, нажмите «+» и выберите «Вставить из буфера обмена».</p><details class="step-shot"><summary>Показать на экране</summary><a href="./public/happ2.jpg" target="_blank"><img src="./public/happ2.jpg" alt="Импорт ссылки в HAPP" loading="lazy"></a><span>Нажмите «+» → «Вставить из буфера обмена»</span></details></div></li>
+                            <li><span class="step-number">04</span><div><h4>Подключитесь</h4><p>Выберите нужную страну и нажмите кнопку включения.</p></div></li>
                         </ol>
-                        <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><div><strong>Готово</strong><p>Профиль подключён. Теперь можно свернуть приложение — соединение продолжит работать.</p></div></div>
+                        <div class="success-card"><span class="success-icon">✓</span><div><strong>Готово</strong><p>VPN настроен и готов к работе.</p></div></div>
                     </article>
 
                     <article class="guide-panel panel-tv">
                         <div class="guide-intro">
-                            <div><span class="guide-eyebrow">Телевизор и приставка</span><h3>Подключение на Android TV</h3><p>Установите TV-версию приложения и перенесите ключ удобным способом.</p></div>
-                            <span class="time-badge">≈ 5 минут</span>
+                            <div><span class="guide-eyebrow">Телефон или планшет</span><h3>Подключение на Android TV</h3><p>Установите TV-версию приложения и перенесите ключ удобным способом.</p></div>
+                            <span class="time-badge">≈ 5 минуты</span>
                         </div>
-                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Убедитесь, что приложение поддерживает Android TV и управление с пульта.</p></div>
+                        <div class="app-hint"><span aria-hidden="true">i</span><p><strong>Перед началом</strong>Убедитесь, что приложение поддерживает Android TV</p></div>
                         <ol class="steps">
-                            <li><span class="step-number">01</span><div><h4>Установите приложение на ТВ</h4><p>Откройте Google Play на телевизоре, найдите приложение из инструкции бота и установите его.</p></div></li>
-                            <li><span class="step-number">02</span><div><h4>Откройте ключ на телефоне</h4><p>В Telegram-боте перейдите в активную подписку и откройте экран с ключом подключения.</p></div></li>
-                            <li><span class="step-number">03</span><div><h4>Перенесите ключ</h4><p>Используйте QR-код или код привязки, если они есть в приложении. Иначе отправьте ссылку на ТВ через поддерживаемый сервис.</p><small>Не вводите длинный ключ с пульта вручную — легко допустить ошибку.</small></div></li>
-                            <li><span class="step-number">04</span><div><h4>Выберите профиль</h4><p>После импорта откройте добавленный профиль, нажмите Connect и подтвердите VPN-подключение.</p></div></li>
+                            <li><span class="step-number">01</span><div><h4>Установите HAPP</h4><p>Выберите версию приложения или найдите «Happ» в Google play.</p><div class="store-links"><a class="store-link" href="https://play.google.com/store/apps/details?id=com.happproxy" target="_blank" rel="noopener noreferrer">Google play</a><a class="store-link" href="https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk" target="_blank" rel="noopener noreferrer">Скачать APK</a><details class="step-shot"><summary>Показать на экране</summary><a href="./public/happapp.jpg" target="_blank"><img src="./public/happapp.jpg" alt="Импорт ссылки в HAPP" loading="lazy"></a></details></div></div></li>
+                            <li><span class="step-number">02</span><div><h4>Скопируйте ссылку</h4><p>Откройте бота, нажмите «Личный кабинет» и скопируйте строку «Ваша ссылка на подключение VPN».</p><small>Это личная ссылка — не передавайте её другим людям.</small><details class="step-shot"><summary>Показать на экране</summary><a href="./public/ios-bot.jpg" target="_blank"><img src="./public/ios-bot.jpg" alt="Импорт ссылки в HAPP" loading="lazy"></a><span>Нажмите «+» → «Вставить из буфера обмена»</span></details></div></li>
+                            <li><span class="step-number">03</span><div><h4>Добавьте ссылку в HAPP</h4><p>Разрешите создание VPN-соединения, нажмите «+» и выберите «Вставить из буфера обмена».</p><details class="step-shot"><summary>Показать на экране</summary><a href="./public/tvhapp.jpg" target="_blank"><img src="./public/tvhapp.jpg" alt="Импорт ссылки в HAPP" loading="lazy"></a><span>Нажмите «+» → «Вставить из буфера обмена»</span></details></div></li>
+                            <li><span class="step-number">04</span><div><h4>Подключитесь</h4><p>Выберите нужную страну и нажмите кнопку включения.</p></div></li>
                         </ol>
-                        <div class="success-card"><span class="success-icon" aria-hidden="true">✓</span><div><strong>Готово</strong><p>Профиль подключён. Теперь можно свернуть приложение — соединение продолжит работать.</p></div></div>
+                        <div class="success-card"><span class="success-icon">✓</span><div><strong>Готово</strong><p>VPN настроен и готов к работе.</p></div></div>
                     </article>
 
                     <article class="guide-panel panel-windows">
@@ -141,7 +124,7 @@
         <div class="help-grid">
             <article><span>01</span><h3>Ключ скопирован полностью</h3><p>Без пробелов, переносов строк и пропущенных символов.</p></article>
             <article><span>02</span><h3>Подписка активна</h3><p>Дата окончания и статус отображаются в Telegram-боте.</p></article>
-            <article><span>03</span><h3>Выбрано нужное приложение</h3><p>Используйте ссылку для вашей платформы из сообщения бота.</p></article>
+            <article><span>03</span><h3>Выбрано нужное приложение</h3><p>Скачайте приложение по ссылке, указанной в инструкции для вашего устройства.</p></article>
         </div>
         <a class="support-link" href="https://t.me/shifrsupport" target="_blank" rel="noreferrer">
             <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M20.7 3.6 2.9 10.5c-1.2.5-1.2 1.1-.2 1.4l4.6 1.4 1.8 5.5c.2.6.1.9.8.9.5 0 .8-.2 1-.4l2.2-2.1 4.6 3.4c.8.5 1.4.2 1.6-.8l3-14.2c.3-1.3-.5-1.9-1.6-1.5v-.5Zm-2.3 3.2-8.7 7.9-.3 3.4-1.7-5.3 10.2-6.4c.5-.3.9-.1.5.4Z" fill="currentColor"/></svg>
