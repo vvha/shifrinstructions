@@ -211,12 +211,19 @@ main {
 }
 
 .hero-copy > p {
-    max-width: 590px;
-    margin: 0;
-    color: var(--navy);
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.65;
+    position: relative;
+    z-index: 3;
+    width: fit-content;
+    max-width: 520px;
+    margin: 22px 0 0;
+    padding: 13px 17px;
+    border: 3px solid #082e4d;
+    border-radius: 15px;
+    background: #fff7d8;
+    color: #082e4d;
+    font-size: 14px;
+    font-weight: 750;
+    line-height: 1.55;
 }
 
 .primary-button {
@@ -294,7 +301,6 @@ main {
     border: 4px solid var(--navy);
     border-radius: 20px;
     background: var(--paper);
-    box-shadow: 0 6px 0 var(--navy);
     transform: rotate(-2deg);
 }
 
@@ -500,6 +506,7 @@ main {
 .device-symbol {
     min-width: 33px;
     height: 33px;
+    padding: 8px;
     display: grid;
     place-items: center;
     border: 2px solid var(--navy);
@@ -586,7 +593,6 @@ main {
     background: var(--yellow);
     font-size: 12px;
     font-weight: 900;
-    box-shadow: 0 4px 0 var(--navy);
 }
 
 .app-hint {
@@ -972,7 +978,9 @@ footer > a:last-child {
     }
 
     .hero-copy > p {
-        font-size: 15px;
+        max-width: 100%;
+        padding: 11px 13px;
+        font-size: 13px;
     }
 
     .primary-button {
@@ -1219,4 +1227,57 @@ footer > a:last-child {
     color: #526576;
     font-size: 11px;
     font-weight: 700;
+}
+
+.image-open {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+}
+
+.image-open img {
+    display: block;
+    width: 100%;
+}
+
+.image-modal {
+    width: min(900px, calc(100% - 30px));
+    max-height: 90vh;
+    overflow: visible;
+    border: 3px solid #082e4d;
+    border-radius: 22px;
+    background: #fffdf5;
+    padding: 15px;
+    box-shadow: 0 8px 0 #082e4d;
+}
+
+.image-modal::backdrop {
+    background: rgba(8, 46, 77, 0.78);
+    backdrop-filter: blur(5px);
+}
+
+.image-modal img {
+    display: block;
+    width: 100%;
+    max-height: calc(90vh - 30px);
+    border-radius: 14px;
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 38px;
+    height: 38px;
+    border: 3px solid #082e4d;
+    border-radius: 50%;
+    background: #ffd91a;
+    color: #082e4d;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: pointer;
 }
